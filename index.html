@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Global Diary - Full Page</title>
+<style>
+  :root{
+    --teal:#0f7a6f;
+    --cream:#f6f2ea;
+    --dark:#0a5b52;
+    --highlight:#06b37a;
+  }
+  body{
+    margin:0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background:var(--cream);
+  }
+  .poster {
+    width:900px;
+    margin:24px auto;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    background:var(--teal);
+    color:#fff;
+  }
+  .topbar {
+    display:flex;
+    justify-content:space-between;
+    padding:10px 22px;
+    font-size:12px;
+    background:rgba(0,0,0,0.06);
+  }
+  .content {
+    padding:30px 44px;
+    text-align:center;
+  }
+  .logo h1{margin:0;font-size:52px;color:#fff;}
+  .tagline {margin-top:6px;font-size:14px;font-weight:700;}
+  .hero {background:var(--cream);margin:20px auto;width:88%;border-radius:10px;padding:18px;}
+  .hero img {width:100%;border-radius:6px;}
+  .desc {margin:18px auto;max-width:86%;font-size:14px;line-height:1.5;color:#eafdf9;}
+
+  /* Pricing section */
+  .pricing {
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    margin:30px auto;
+    max-width:95%;
+    flex-wrap:nowrap;  /* keep everything in one row */
+  }
+  .plan {
+    background:#fff;
+    color:#333;
+    border-radius:12px;
+    width:30%;              /* three equal slots */
+    padding:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    text-align:left;
+    box-sizing:border-box;
+  }
+  .plan.popular {border:2px solid var(--highlight);}
+  .plan h3 {margin:0;font-size:18px;color:var(--dark);}
+  .plan .price {font-size:22px;font-weight:700;color:var(--highlight);margin:10px 0;}
+  .plan .oldprice {text-decoration:line-through;color:#888;font-size:13px;}
+  .plan ul {list-style:none;padding:0;margin:12px 0;}
+  .plan ul li {margin:6px 0;font-size:13px;}
+  .plan button {
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:none;
+    background:var(--highlight);
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:12px;
+  }
+  /* Footer (Contact Section) */
+  .footer {
+    background:var(--teal);
+    padding:40px 30px;
+    color:#fff;
+    text-align:left;
+    border-top:2px solid rgba(255,255,255,0.1);
+  }
+  .footer img {max-width:100%;border-radius:6px;margin-bottom:18px;}
+  .footer h2 {margin-top:0;font-size:22px;}
+  .footer .contact-grid {
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    margin:20px 0;
+  }
+  .contact-item {flex:1;min-width:200px;}
+  .contact-item strong {display:block;margin-bottom:4px;}
+  .footer p {margin:6px 0;font-size:14px;}
+  .social {margin-top:12px;}
+  .social span {margin-right:10px;font-size:18px;}
+  .footer-note {margin-top:20px;font-size:13px;color:#eafdf9;}
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="topbar">
+    <span>ULTIMATE BUSINESS PLATFORM</span>
+    <span>NEPAL'S ONLY</span>
+  </div>
+  <div class="content">
+    <div class="logo">
+      <h1>Global Diary</h1>
+      <div class="tagline">FIRST AI-POWERED SOCIAL MEDIA PLATFORM</div>
+    </div>
+    <div class="hero">
+      <img src="./dashboard.png" alt="Global Diary UI screenshot">
+    </div>
+    <p class="desc">
+      In a digital age where connection is key, GlobalDiary.com is Nepal’s answer to powerful, localized social media marketing. Designed for businesses of all sizes — from small shops to enterprises — our platform combines innovative tools, seamless communication, and performance-driven analytics to help you stand out in Nepal’s growing digital market.
+    </p>
+
+    <!-- Pricing Section -->
+    <div class="pricing">
+      <div class="plan">
+        <h3>Starter Plan (Yearly)</h3>
+        <div class="oldprice">NPR 1,000</div>
+        <div class="price">Free</div>
+        <p>5,000 AI Credits</p>
+        <button>Create Company</button>
+        <ul>
+          <li>Unlimited Feed Posts</li>
+          <li>1 Active Job Post</li>
+          <li>1 Active Event Post</li>
+          <li>Up to 20 Listings</li>
+        </ul>
+      </div>
+
+      <div class="plan popular">
+        <h3>Growth Plan (Yearly)</h3>
+        <div class="oldprice">NPR 5,000</div>
+        <div class="price">NPR 1,000</div>
+        <p>20,000 AI Credits</p>
+        <button>Create Company</button>
+        <ul>
+          <li>Unlimited Feed/News/Offers</li>
+          <li>3 Active Job Posts</li>
+          <li>3 Active Event Posts</li>
+          <li>Up to 60 Listings</li>
+          <li>Lead Management (3,000 leads)</li>
+          <li>Recruitment Management (1,000 candidates)</li>
+        </ul>
+      </div>
+
+      <div class="plan">
+        <h3>Enterprise Plan (Yearly)</h3>
+        <div class="oldprice">NPR 20,000</div>
+        <div class="price">NPR 5,000</div>
+        <p>50,000 AI Credits</p>
+        <button>Create Company</button>
+        <ul>
+          <li>Unlimited Feed/News/Offers</li>
+          <li>Unlimited Job/Event Posts</li>
+          <li>Unlimited Listings</li>
+          <li>Lead Management (Unlimited)</li>
+          <li>Recruitment Management (Unlimited)</li>
+          <li>Premium Hiring Database</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="subscribe-wrap">
+      <button class="subscribe">Subscribe To Our Newsletter</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <strong>Website:</strong>
+        <p>www.globaldiary.com</p>
+      </div>
+      <div class="contact-item">
+        <strong>Phone:</strong>
+        <p>+977 970-5990686</p>
+      </div>
+      <div class="contact-item">
+        <strong>Email:</strong>
+        <p>support@globaldiary.com</p>
+      </div>
+    </div>
+    <div class="social">
+      <span>🌐</span><span>📘</span><span>🐦</span><span>▶️</span>
+    </div>
+    <p class="footer-note">
+      Join Nepal’s digital revolution with GlobalDiary.com – Where Your Business Thrives!
+    </p>
+  </div>
+</div>
+</body>
+</html>
